@@ -246,19 +246,19 @@
 
 #### __フィルター__
 
-* __Preface__: To avoid transcoding multiple times or transferring losslessly encoded video, ideally, Filtering and Encoding should be done by the same person.
-* __Theory__: Filtering tasks beyond [IVTC](http://foro.doom9.org/ivtc-tut.htm) can be thought of as an optional sub-task for encoders. Common filtering tasks include triming length, cutting out advertisements, correcting various studio mistakes and improving subjective visual quality.
-* Encoders that worry about compatibility may also need to hardsub OPs/EDs, or the entire script, into the video stream prior to distro. This can be done at either the Filtering or Encoding stages.
-* Beyond basic tasks, filtering has diminishing returns. It is very time consuming to both learn and implement.
-* More Theory: 
-* RX Mastering's [Video Philosophy](https://rxmastering.wordpress.com/video).
-* [Digital Noise Reduction on DVD: Background and Examples](http://www.cinedrome.ch/hometheater/dvd/dnr).
-* Mix of theory and examples: [Digital ICE](//www.youtube.com/watch?v=E0LVjGp1Wtc) (YouTube).
-* __Examples__:
-  * Video restoration: [The power of Avisynth Part III](https://vimeo.com/11133342) and digitized [8mm film](https://vimeo.com/49963017) (vimeo).
-  * [Seirei No Moribito](http://compare.bakashots.me/compare.php?setId=2089), [KissXSis OVA](http://compare.bakashots.me/compare.php?setId=1973&comparisonId=12625), [Hyperdimension Neptunia](http://compare.bakashots.me/compare.php?setId=2028&comparisonId=13099) (all overfiltered but w/e).
-  * Moozzi2's Rakudai [Before](//yukisubs.files.wordpress.com/2016/10/moozzi2_rakudai_1_before.png) and [After](//yukisubs.files.wordpress.com/2016/10/moozzi2_rakudai_1_after.png).
-  * Subtle filters example: [Case Study: Turn-A Gundam](//rxmastering.wordpress.com/2014/12/03/case-study-turn-a-gundam/).
+* __始める前に__:何度もトランスコードしたり、ロスレスにエンコードされた映像を転送したりするのを避けるためには、フィルタリングとエンコードを同じ人が行うのが理想的。
+* __理論__: [IVTC](http://foro.doom9.org/ivtc-tut.htm) (逆テレシネ)を超えるフィルタリングタスクは、エンコーダのオプションのサブタスクと考えることができます。一般的なフィルタリング作業には、長さのトリム、広告のカット、スタジオの様々なミスの修正、主観的な視覚品質の改善などがあります。
+* 互換性を気にするエンコーダーは、OP/EDやスクリプト全体をディストロの前にビデオストリームにハードサブする必要があるかもしれません。これは、フィルタリングとエンコードのどちらの段階でも行うことができます
+* 基本的な作業を超えると、フィルタリングはあまり効果がありません。習得にも実装にも非常に時間がかかります。
+* 追加情報: 
+* RX Masteringの [ビデオ哲学](https://rxmastering.wordpress.com/video).
+* [DVDにおけるデジタルノイズリダクション:背景と実例](http://www.cinedrome.ch/hometheater/dvd/dnr).
+* 理論と実例のミックス [Digital ICE](//www.youtube.com/watch?v=E0LVjGp1Wtc) (YouTube).
+* __実例__:
+  * ビデオ修復: [Avisynthの威力 Part III](https://vimeo.com/11133342)とデジタル化 [8mm film](https://vimeo.com/49963017) (vimeo).
+  * [精霊の守り人](http://compare.bakashots.me/compare.php?setId=2089), [Kiss×sis OVA](http://compare.bakashots.me/compare.php?setId=1973&comparisonId=12625), [超次元ゲイム ネプテューヌ](http://compare.bakashots.me/compare.php?setId=2028&comparisonId=13099) (all overfiltered but w/e).
+  * Moozzi2'の「落第騎士の英雄譚」 [Before](//yukisubs.files.wordpress.com/2016/10/moozzi2_rakudai_1_before.png) [After](//yukisubs.files.wordpress.com/2016/10/moozzi2_rakudai_1_after.png).
+  * 微妙のフィルター: [Case Study: Turn-A Gundam](//rxmastering.wordpress.com/2014/12/03/case-study-turn-a-gundam/).
   * [NeatVideo](//www.neatvideo.com/examples) - similar to [TemporalDegrain()](http://avisynth.nl/index.php/Temporal_Degrain) for AviSynth.
   * [Improving Visual Quality with AviSynth Filters](https://www.animemusicvideos.org/guides/avtech31/post-qual.html), [PDF](//yukisubs.files.wordpress.com/2016/10/amv_post_production_-_visual_quality.pdf).
   * [Using Filters and Functions](http://www.l33tmeatwad.com/vapoursynth101/using-filters-functions) (Vapoursynth).
@@ -582,54 +582,54 @@
     * Or [xdelta3 GUI](//osdn.net/projects/sfnet_xdelta3-gui) for GUI people. Also see: Moodkiller's [xdelta3 rebooted fork](https://github.com/Moodkiller/xdelta3-gui-2.0).
   * A binary version of xdelta3.exe can be obtained from the above patch examples or from [xdelta3 GUI](//osdn.net/projects/sfnet_xdelta3-gui).
 
-#### __グループ__
+#### __*グループ__*
 
-* __Theory__: Provide a way to centralize knowledge about your group including the following:
-  * Latest release information, project archive, download options (Torrents/HTTP/XDCC/fserve), contact information (IRC/Email), community feedback mechanisms (chatbox), declared waifus, guides for the community, and donation solicitation.
-* __Getting Started__:
-  1. (optional) Read [The Internet and Hosting Providers](//esoterictek.blogspot.com/2016/10/the-internet-and-hosting-providers.html) to know how the internet works and how much services cost.
-  2. (optional) Purchase a mygroup.moe domain from [Hover](//hover.com) for ~$20 (yearly). Alternative registrars: [get.moe](http://get.moe).
-  3. Start a blog on [Blogger](//www.blogger.com) or [Wordpress](//wordpress.com).
-     * Note: Wordpress and Weebly charge for custom domains and Blogger will disable TLS.
-  4. Post releases. [Example](//doki.co).
-* Markdown (formatting for blog posts):
-  * [Markdown Cheatsheet](//github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-  * [Markdown Preview](//stackedit.io/app), [v4](//stackedit.io/editor), and HTML converter.
+* *__Theory__: Provide a way to centralize knowledge about your group including the following:*
+  * *Latest release information, project archive, download options (Torrents/HTTP/XDCC/fserve), contact information (IRC/Email), community feedback mechanisms (chatbox), declared waifus, guides for the community, and donation solicitation.*
+* *__Getting Started__:*
+  1. *(optional) Read [The Internet and Hosting Providers](//esoterictek.blogspot.com/2016/10/the-internet-and-hosting-providers.html) to know how the internet works and how much services cost.*
+  2. *(optional) Purchase a mygroup.moe domain from [Hover](//hover.com) for ~$20 (yearly). Alternative registrars: [get.moe](http://get.moe).*
+  3. *Start a blog on [Blogger](//www.blogger.com) or [Wordpress](//wordpress.com).*
+     * *Note: Wordpress and Weebly charge for custom domains and Blogger will disable TLS.*
+  4. *Post releases. [Example](//doki.co).*
+* *Markdown (formatting for blog posts):*
+  * *[Markdown Cheatsheet](//github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).*
+  * *[Markdown Preview](//stackedit.io/app), [v4](//stackedit.io/editor), and HTML converter.*
 
-#### __配布をDIYするためのガイド__
+#### __配布をDIYするためのガイド__*
 
-* __General Mandatory Reading__
-  * [The Internet and Hosting Providers](//esoterictek.blogspot.com/2016/10/the-internet-and-hosting-providers.html).
-  * Port Forwarding [theory](//en.wikipedia.org/wiki/Port_forwarding) and [related guide](//www.noip.com/support/knowledgebase/general-port-forwarding-guide).
-  * [Setting Up A Server](//wiki.installgentoo.com/index.php/Setting_up_a_Server) (including a [VPS](//en.wikipedia.org/wiki/Virtual_private_server)) and [Security Policy](//wiki.installgentoo.com/index.php/Setting_up_a_Server#Recommended_security_policy).
-  * Using Crontab [Guide 1](//help.ubuntu.com/community/CronHowto) and [Guide 2](http://www.unixgeeks.org/security/newbie/unix/cron-1.html) to start tasks at startup. See: [this example](//gist.github.com/gdiaz384/343e3704dc1f955e6bd904d384566cb4).
-* __DNS/Dynamic DNS (DDNS)__
-  * [FreeDNS Client Update Protocol Client List](//freedns.afraid.org/scripts/freedns.clients.php), DD-WRT DDNS [Guide 1](http://www.stevejenkins.com/blog/2014/11/using-freedns-afraid-org-with-dd-wrt-when-you-lose-your-free-dyndns-or-d-link-ddns-account) and [Guide 2](//freedns.afraid.org/guide/dd-wrt/).
-  * Namecheap's [DDNS Information](https://www.namecheap.com/support/knowledgebase/category.aspx/11/dynamic-dns) and [DDNS host guide](https://www.namecheap.com/support/knowledgebase/article.aspx/43/11/how-do-i-set-up-a-host-for-dynamic-dns).
-* __Raspberry Pi__
-  * [raspberryPi](//www.raspberrypi.org), [Documentation](//www.raspberrypi.org/documentation) and [Ebay Search Link](//www.ebay.com/sch/i.html?_nkw=raspberry+pi+3b%2B). 
-  * Hint: Use external storage over USB instead the Secure Digital (SD) card internal storage.
-  * Be sure to set up [Remote Access](//www.raspberrypi.org/documentation/remote-access): [SSH](//www.raspberrypi.org/documentation/remote-access/ssh/README.md), [VNC](//www.raspberrypi.org/documentation/remote-access/vnc/README.md), (and maybe) [Samba](//www.raspberrypi.org/magpi/samba-file-server/).
-* __Seedbox Software__
-* [rTorrent](//wiki.archlinux.org/index.php/RTorrent) with the [ruTorrent](//wiki.archlinux.org/index.php/RuTorrent) frontend is popular due to very low resource utilization and high performance. Installations and management are usually automated:
-  * [Quickbox](//quickbox.io), [Github](//github.com/QuickBox/QB) (recommended).
-    * Only works for x86_64 on certain Ubuntu/Debian versions:
-  * arakasi72's "rtinst" for Debian and Ubuntu: [Github](//github.com/arakasi72/rtinst). Note: I have not tested this.
-* [qBittorrent](http://www.qbittorrent.org), [Wiki](//github.com/qbittorrent/qBittorrent/wiki), is cross platform and cross-architecture.
-  * `sudo apt-get install -y qbittorrent`
-  * Or compile it to get the latest v3.x version: See this [from scratch script](//gist.github.com/YukinoAi/1f58db68c7ef3235addbf001de44fba8). Alternatively:
-    * [official compiling documentation](//github.com/qbittorrent/qBittorrent/wiki/Compiling-qBittorrent-on-Debian-and-Ubuntu), [arm7 compile instructions](//gist.github.com/jDmacD/9e38542901b9672728f088abd353a0a1) and [Banana seedbox](https://github.com/qbittorrent/qBittorrent/wiki/Compiling-qBittorrent-on-Raspbian-for-LeMaker-Banana-Pro). 
-    * v4.x requires QT5. [Have fun](https://wiki.qt.io/Native_Build_of_Qt_5.4.1_on_a_Raspberry_Pi).
-* __HTTP File Server__
-  * List of [Static HTTP Server Software](//gist.github.com/willurd/5720255).
-    * Consider using the asynchronous "HTTP-Server" implemented using Node.js. See: [this guide](//gist.github.com/gdiaz384/94d3800fd5b3465fe7010917563581cd). 
-  * Apache and Nginx have various issues recursively auto-indexing mounted Fat32 formatted volumes via directory junctions. Just FYI~
-  * Please no but... [HFS ~ HTTP File Server](http://www.rejetto.com/hfs) (Windows only).
-* __TLS__
-  * For encryption check out stunnel: [Features List](//www.stunnel.org/features.html), this [install guide](//www.digitalocean.com/community/tutorials/how-to-set-up-an-ssl-tunnel-using-stunnel-on-ubuntu).
-  * For authentication check out [LetsEncrypt](//letsencrypt.org/docs) and the following resources: the [EFF's Certbot](//certbot.eff.org), stunnel's [LetsEncrypt configuration](//community.letsencrypt.org/t/configure-stunnel/3611) and this guide on [Configuring Cipher Suites Correctly](//weakdh.org/sysadmin.html). 
-    * Also see this TODO: [TLS combined guide].
-  * Use SSL-Lab's [SSL Server Test](//www.ssllabs.com/ssltest) to verify the configuration once everything is set up.
+* *__General Mandatory Reading__*
+  * *[The Internet and Hosting Providers](//esoterictek.blogspot.com/2016/10/the-internet-and-hosting-providers.html).*
+  * *Port Forwarding [theory](//en.wikipedia.org/wiki/Port_forwarding) and [related guide](//www.noip.com/support/knowledgebase/general-port-forwarding-guide).*
+  * *[Setting Up A Server](//wiki.installgentoo.com/index.php/Setting_up_a_Server) (including a [VPS](//en.wikipedia.org/wiki/Virtual_private_server)) and [Security Policy](//wiki.installgentoo.com/index.php/Setting_up_a_Server#Recommended_security_policy).*
+  * *Using Crontab [Guide 1](//help.ubuntu.com/community/CronHowto) and [Guide 2](http://www.unixgeeks.org/security/newbie/unix/cron-1.html) to start tasks at startup. See: [this example](//gist.github.com/gdiaz384/343e3704dc1f955e6bd904d384566cb4).*
+* *__DNS/Dynamic DNS (DDNS)__*
+  * *[FreeDNS Client Update Protocol Client List](//freedns.afraid.org/scripts/freedns.clients.php), DD-WRT DDNS [Guide 1](http://www.stevejenkins.com/blog/2014/11/using-freedns-afraid-org-with-dd-wrt-when-you-lose-your-free-dyndns-or-d-link-ddns-account) and [Guide 2](//freedns.afraid.org/guide/dd-wrt/).*
+  * *Namecheap's [DDNS Information](https://www.namecheap.com/support/knowledgebase/category.aspx/11/dynamic-dns) and [DDNS host guide](https://www.namecheap.com/support/knowledgebase/article.aspx/43/11/how-do-i-set-up-a-host-for-dynamic-dns).*
+* *__Raspberry Pi__*
+  * *[raspberryPi](//www.raspberrypi.org), [Documentation](//www.raspberrypi.org/documentation) and [Ebay Search Link](//www.ebay.com/sch/i.html?_nkw=raspberry+pi+3b%2B). *
+  * *Hint: Use external storage over USB instead the Secure Digital (SD) card internal storage.*
+  * *Be sure to set up [Remote Access](//www.raspberrypi.org/documentation/remote-access): [SSH](//www.raspberrypi.org/documentation/remote-access/ssh/README.md), [VNC](//www.raspberrypi.org/documentation/remote-access/vnc/README.md), (and maybe) [Samba](//www.raspberrypi.org/magpi/samba-file-server/).*
+* *__Seedbox Software__*
+* *[rTorrent](//wiki.archlinux.org/index.php/RTorrent) with the [ruTorrent](//wiki.archlinux.org/index.php/RuTorrent) frontend is popular due to very low resource utilization and high performance. Installations and management are usually automated:*
+  * *[Quickbox](//quickbox.io), [Github](//github.com/QuickBox/QB) (recommended).*
+    * *Only works for x86_64 on certain Ubuntu/Debian versions:*
+  * *arakasi72's "rtinst" for Debian and Ubuntu: [Github](//github.com/arakasi72/rtinst). Note: I have not tested this.*
+* *[qBittorrent](http://www.qbittorrent.org), [Wiki](//github.com/qbittorrent/qBittorrent/wiki), is cross platform and cross-architecture.*
+  * *`sudo apt-get install -y qbittorrent`*
+  * *Or compile it to get the latest v3.x version: See this [from scratch script](//gist.github.com/YukinoAi/1f58db68c7ef3235addbf001de44fba8). Alternatively:*
+    * *[official compiling documentation](//github.com/qbittorrent/qBittorrent/wiki/Compiling-qBittorrent-on-Debian-and-Ubuntu), [arm7 compile instructions](//gist.github.com/jDmacD/9e38542901b9672728f088abd353a0a1) and [Banana seedbox](https://github.com/qbittorrent/qBittorrent/wiki/Compiling-qBittorrent-on-Raspbian-for-LeMaker-Banana-Pro). *
+    * *v4.x requires QT5. [Have fun](https://wiki.qt.io/Native_Build_of_Qt_5.4.1_on_a_Raspberry_Pi).*
+* *__HTTP File Server__*
+  * *List of [Static HTTP Server Software](//gist.github.com/willurd/5720255).*
+    * *Consider using the asynchronous "HTTP-Server" implemented using Node.js. See: [this guide](//gist.github.com/gdiaz384/94d3800fd5b3465fe7010917563581cd). *
+  * *Apache and Nginx have various issues recursively auto-indexing mounted Fat32 formatted volumes via directory junctions. Just FYI~*
+  * *Please no but... [HFS ~ HTTP File Server](http://www.rejetto.com/hfs) (Windows only).*
+* *__TLS__*
+  * *For encryption check out stunnel: [Features List](//www.stunnel.org/features.html), this [install guide](//www.digitalocean.com/community/tutorials/how-to-set-up-an-ssl-tunnel-using-stunnel-on-ubuntu).*
+  * *For authentication check out [LetsEncrypt](//letsencrypt.org/docs) and the following resources: the [EFF's Certbot](//certbot.eff.org), stunnel's [LetsEncrypt configuration](//community.letsencrypt.org/t/configure-stunnel/3611) and this guide on [Configuring Cipher Suites Correctly](//weakdh.org/sysadmin.html). *
+    * *Also see this TODO: [TLS combined guide].*
+  * *Use SSL-Lab's [SSL Server Test](//www.ssllabs.com/ssltest) to verify the configuration once everything is set up.*
 
 #### __最多重化__
 
@@ -668,67 +668,67 @@
    * Remember to put the CRC32 in [ ] at the end of the filename (e.g. myfile_[1BA919D7].mkv). (See: Random Distro Tools for details.)
 5. Distro (See: Distro).
 
-#### __アナログ処理__
+#### *__アナログ処理__*
 
-* "Digital is an exercise in precision, while analog was an exercise in controlled chaos." -[digitalfaq.com](http://www.digitalfaq.com/guides/video/capture-understand-sources.htm), [Forums](http://www.digitalfaq.com/forum).
-* __Analog Video Broadcasting History__: (fascinating btw)
-  * Presentation slides on [Analog Communication Systems](http://slideplayer.com/slide/3990945/).
-  * YouTube videos:
-  * [Technology Connections](//www.youtube.com/channel/UCy0tKL1T7wFoYcxCe0xjN6Q/videos) (YouTube channel).
-    * Before electronic television, there was [Mechanical Television](//www.youtube.com/watch?v=v5OANXk-6-w).
-    * [Philo Farnsworth and the Invention of Electronic Television](//www.youtube.com/watch?v=NUaowcXQtOo).
-    * [Lines of Light: How Analog Television Works](//www.youtube.com/watch?v=l4UgZBs7ZGo).
-    * How Analog Color TV Works [The Beginnings](//www.youtube.com/watch?v=dX649lnKAU0), Part 2: [Compatible Color](//www.youtube.com/watch?v=InrDRGTPqnE) and Part 3: [more stuff](//www.youtube.com/watch?v=3JFt6t6ijLs).
-    * [These Are Not Pixels: Revisited](//www.youtube.com/watch?v=Ea6tw-gulnQ).
-    * [Trinitron: Sony's Once Unbeatable Product](//www.youtube.com/watch?v=0aFhzGEBQlk).
-      * [Why is TV 29.97 frames per second?](//www.youtube.com/watch?v=3GJUM6pCpew)
-* __Analog Decoding and Artifacting__:
-  * An introduction to artifacts and [TV and Video Comb Filters](http://www.cockam.com/vidcomb.htm).
-  * [Contrasting Comb Filter Types](https://www.extron.com/company/article.aspx?id=ntscdb4).
-  * Interesting [case study](https://hometheaterhifi.com/volume_9_2/runco-pfp-11-video-processor-4-2002-part-2.html).
-  * [Timebase Corrector (TBC) FAQ](http://www.digitalfaq.com/forum/video-restore/2251-tbc-time-base.html) and [preface](http://www.digitalfaq.com/forum/video-restore/1853-alternative-avt-8710-a.html#post9889).
-* __Consumer Media Overview and Resources__:
-  * Wiki on video: [Composite](//en.wikipedia.org/wiki/Composite_video), [S-Video](//en.wikipedia.org/wiki/S-Video), [Component](https://en.wikipedia.org/wiki/YPbPr). 
-  * Wiki on audio: TODO: stuff here.
-    * [Toslink or Coax](http://thewelltemperedcomputer.com/Intro/SQ/Toslink_Coax.htm)?
-  * Interesting [case study](//hometheaterhifi.com/volume_8_4/toshiba-sd-K700-dvd-player-12-2001.html).
-  * __Video Home System (VHS)__: Up to 3 Mhz of analog video on magnetic tape with 240 lines of resolution.
-    * VHS Player [User Manual Index](http://www.digitalfaq.com/forum/vcr-repair/2668-index-user-manuals.html).
-    * YouTube videos:
-    * [The Impossible Feat inside Your VCR](//www.youtube.com/watch?v=KfuARMCyTvg).
-    * Why Sony's Beta Videotape System Failed: [Part 1](//www.youtube.com/watch?v=FyKRubB5N60) and [Part 2](//www.youtube.com/watch?v=v019trxfcmg).
-    * [Comparing Beta and VHS](//www.youtube.com/watch?v=_oJs8-I9WtA).
-  * __LaserDisc (LD)__: Up to 5 Mhz of analog video on a digital disc with 400-425 lines of resolution. Supports CD quality digital audio, and sometimes encoded AC3 or DTS.
-    * NTSC - 262.5 lines, 59.94 Hz; PAL - 312.5 lines, 50 Hz
-    * [Forums](http://forum.lddb.com/) and [reddit](//www.reddit.com/r/LaserDisc/). Related [library](https://yukisubs.files.wordpress.com/2018/06/antcufaalb_ld_library.jpg).
-    * Youtube Videos:
-    * [Laserdisc: An Introduction](//www.youtube.com/watch?v=Eg8tK1LpLS8).
-    * [Laserdisc's Failure: What Went Wrong](//www.youtube.com/watch?v=TClRRMFZ7Sw).
-    * [Laserdisc: Features, Follies & Evolution](//www.youtube.com/watch?v=Nbo2QepTZNY).
-    * [DVD: The Death Knell of Laserdisc](//www.youtube.com/watch?v=cvwuAKi1ZB4).
-    * [MUSE Hi-Vision Laserdisc: The Blu-ray of 1994](//www.youtube.com/watch?v=behaBgwnB8M).
-    * The most boring video ever on optical media and Laserdiscs: Pioneer's  [Video Tuning Fork volume 1](//www.youtube.com/watch?v=G2HBG7HrY7s&list=PLs8mgmDyfwJfhcSCHwcb4R4V0KI0LGCGO). 
-      * Please skip this one.
-    * [Cleaning and polishing LaserDiscs](https://www.domesday86.com/?page_id=2855).
-    * Further viewing: Overview of the [Pioneer CLD-M301](//www.youtube.com/watch?v=L6iyUSnrGk0).
-* __Analog Capture__: The idea is to digitize the analog audio and video signals.
-  * Digital FAQ's [Guides Index](http://www.digitalfaq.com/guides/video.htm).
-  * [Understanding Video Sources](http://www.digitalfaq.com/guides/video/capture-understand-sources.htm).
-  * [Introduction to Digital Video Capturing, Recording TV](http://www.digitalfaq.com/guides/video/introduction-record-capture.htm).
-  * VirtualDub settings guides: [Using VirtualDub to Capture AVI](http://www.digitalfaq.com/guides/video/capture-avi-virtualdub.htm) and [related discussion](http://www.digitalfaq.com/forum/video-capture/7427-capturing-virtualdub-settings.html).
-  * Comparison of Laserdisc capture hardware via [screenshot comparisons](//originaltrilogy.com/topic/Laserdisc-players-screenshot-comparison/id/12907).
-  * Lossless [HDMI capture comparisons](https://forum.videohelp.com/threads/376473-Lossless-HDMI-capture-devices-comparison-screenshots) (for passthrough configurations).
-  * [__8mm__](//www.google.com/search?q=8mm+film+reels&source=lnms&tbm=isch): [Reddit wiki](//www.reddit.com/r/8mm/wiki/index).
-  * __VHS__: 
-    * [How to Rip VHS](http://anarchivism.org/w/How_to_Rip_VHS).
-    * [Video Hardware Suggestions; Best VCRs to Convert Tape to Digital](http://www.digitalfaq.com/guides/video/capture-playback-hardware.htm).
-  * __LaserDisc__: 
-    * Traditional method: [How to Rip Laserdisc](http://anarchivism.org/w/How_to_Rip_Laserdisc) and [reddit topic](//www.reddit.com/r/LaserDisc/comments/3eqqhq/ripping_laserdiscs).
-    * New method: [Doomsday Duplicator](//www.domesday86.com/?page_id=978), see [example results](//yukisubs.files.wordpress.com/2020/04/domdup_comparison.jpg). Project [background presentation](http://abug.org.uk/index.php/2020/07/04/domesday-86-part-1-the-project/?series=vabug-4th-july-2020).
-      * Technical Background: [Hardware](//www.domesday86.com/?page_id=2233), [Software](//www.domesday86.com/?page_id=1070), [Laserdisc Decoding](https://www.domesday86.com/?page_id=1379).
-      * [Install and Usage guide](//www.domesday86.com/?page_id=1312).
-      * Once captured as raw, the contents must be decoded in software. Hence [ld-decode](//github.com/happycube/ld-decode/wiki) which is a "software defined LaserDisc player."
-        * [Installation](//github.com/happycube/ld-decode/wiki/Installation), [Basic Usage Guide](https://github.com/happycube/ld-decode/wiki/Basic-usage-of-ld-decode), and [NTSC decoding](//github.com/happycube/ld-decode/wiki/Creating-video-from-NTSC-decodes) in vapoursynth.
-  * Outdated but interesting:
-    * [Video Workflows: Capture MPEG-2 for DVD](http://www.digitalfaq.com/guides/video/dvd-workflows-mpeg2.htm).
-    * [Good Methods to Create DVDs (Video Workflows)](http://www.digitalfaq.com/guides/video/dvd-workflows.htm).
+* *"Digital is an exercise in precision, while analog was an exercise in controlled chaos." -[digitalfaq.com](http://www.digitalfaq.com/guides/video/capture-understand-sources.htm), [Forums](http://www.digitalfaq.com/forum).*
+* *__Analog Video Broadcasting History__: (fascinating btw)*
+  * *Presentation slides on [Analog Communication Systems](http://slideplayer.com/slide/3990945/).*
+  * *YouTube videos:*
+  * *[Technology Connections](//www.youtube.com/channel/UCy0tKL1T7wFoYcxCe0xjN6Q/videos) (YouTube channel).*
+    * *Before electronic television, there was [Mechanical Television](//www.youtube.com/watch?v=v5OANXk-6-w).*
+    * *[Philo Farnsworth and the Invention of Electronic Television](//www.youtube.com/watch?v=NUaowcXQtOo).*
+    * *[Lines of Light: How Analog Television Works](//www.youtube.com/watch?v=l4UgZBs7ZGo).*
+    * *How Analog Color TV Works [The Beginnings](//www.youtube.com/watch?v=dX649lnKAU0), Part 2: [Compatible Color](//www.youtube.com/watch?v=InrDRGTPqnE) and Part 3: [more stuff](//www.youtube.com/watch?v=3JFt6t6ijLs).*
+    * *[These Are Not Pixels: Revisited](//www.youtube.com/watch?v=Ea6tw-gulnQ).*
+    * *[Trinitron: Sony's Once Unbeatable Product](//www.youtube.com/watch?v=0aFhzGEBQlk).*
+      * *[Why is TV 29.97 frames per second?](//www.youtube.com/watch?v=3GJUM6pCpew)*
+* *__Analog Decoding and Artifacting__:*
+  * *An introduction to artifacts and [TV and Video Comb Filters](http://www.cockam.com/vidcomb.htm).*
+  * *[Contrasting Comb Filter Types](https://www.extron.com/company/article.aspx?id=ntscdb4).*
+  * *Interesting [case study](https://hometheaterhifi.com/volume_9_2/runco-pfp-11-video-processor-4-2002-part-2.html).*
+  * *[Timebase Corrector (TBC) FAQ](http://www.digitalfaq.com/forum/video-restore/2251-tbc-time-base.html) and [preface](http://www.digitalfaq.com/forum/video-restore/1853-alternative-avt-8710-a.html#post9889).*
+* *__Consumer Media Overview and Resources__:*
+  * *Wiki on video: [Composite](//en.wikipedia.org/wiki/Composite_video), [S-Video](//en.wikipedia.org/wiki/S-Video), [Component](https://en.wikipedia.org/wiki/YPbPr). *
+  * *Wiki on audio: TODO: stuff here.*
+    * *[Toslink or Coax](http://thewelltemperedcomputer.com/Intro/SQ/Toslink_Coax.htm)?*
+  * *Interesting [case study](//hometheaterhifi.com/volume_8_4/toshiba-sd-K700-dvd-player-12-2001.html).*
+  * *__Video Home System (VHS)__: Up to 3 Mhz of analog video on magnetic tape with 240 lines of resolution.*
+    * *VHS Player [User Manual Index](http://www.digitalfaq.com/forum/vcr-repair/2668-index-user-manuals.html).*
+    * *YouTube videos:*
+    * *[The Impossible Feat inside Your VCR](//www.youtube.com/watch?v=KfuARMCyTvg).*
+    * *Why Sony's Beta Videotape System Failed: [Part 1](//www.youtube.com/watch?v=FyKRubB5N60) and [Part 2](//www.youtube.com/watch?v=v019trxfcmg).*
+    * *[Comparing Beta and VHS](//www.youtube.com/watch?v=_oJs8-I9WtA).*
+  * *__LaserDisc (LD)__: Up to 5 Mhz of analog video on a digital disc with 400-425 lines of resolution. Supports CD quality digital audio, and sometimes encoded AC3 or DTS.*
+    * *NTSC - 262.5 lines, 59.94 Hz; PAL - 312.5 lines, 50 Hz*
+    * *[Forums](http://forum.lddb.com/) and [reddit](//www.reddit.com/r/LaserDisc/). Related [library](https://yukisubs.files.wordpress.com/2018/06/antcufaalb_ld_library.jpg).*
+    * *Youtube Videos:*
+    * *[Laserdisc: An Introduction](//www.youtube.com/watch?v=Eg8tK1LpLS8).*
+    * *[Laserdisc's Failure: What Went Wrong](//www.youtube.com/watch?v=TClRRMFZ7Sw).*
+    * *[Laserdisc: Features, Follies & Evolution](//www.youtube.com/watch?v=Nbo2QepTZNY).*
+    * *[DVD: The Death Knell of Laserdisc](//www.youtube.com/watch?v=cvwuAKi1ZB4).*
+    * *[MUSE Hi-Vision Laserdisc: The Blu-ray of 1994](//www.youtube.com/watch?v=behaBgwnB8M).*
+    * *The most boring video ever on optical media and Laserdiscs: Pioneer's  [Video Tuning Fork volume 1](//www.youtube.com/watch?v=G2HBG7HrY7s&list=PLs8mgmDyfwJfhcSCHwcb4R4V0KI0LGCGO). *
+      * *Please skip this one.*
+    * *[Cleaning and polishing LaserDiscs](https://www.domesday86.com/?page_id=2855).*
+    * *Further viewing: Overview of the [Pioneer CLD-M301](//www.youtube.com/watch?v=L6iyUSnrGk0).*
+* *__Analog Capture__: The idea is to digitize the analog audio and video signals.*
+  * *Digital FAQ's [Guides Index](http://www.digitalfaq.com/guides/video.htm).*
+  * *[Understanding Video Sources](http://www.digitalfaq.com/guides/video/capture-understand-sources.htm).*
+  * *[Introduction to Digital Video Capturing, Recording TV](http://www.digitalfaq.com/guides/video/introduction-record-capture.htm).*
+  * *VirtualDub settings guides: [Using VirtualDub to Capture AVI](http://www.digitalfaq.com/guides/video/capture-avi-virtualdub.htm) and [related discussion](http://www.digitalfaq.com/forum/video-capture/7427-capturing-virtualdub-settings.html).*
+  * *Comparison of Laserdisc capture hardware via [screenshot comparisons](//originaltrilogy.com/topic/Laserdisc-players-screenshot-comparison/id/12907).*
+  * *Lossless [HDMI capture comparisons](https://forum.videohelp.com/threads/376473-Lossless-HDMI-capture-devices-comparison-screenshots) (for passthrough configurations).*
+  * *[__8mm__](//www.google.com/search?q=8mm+film+reels&source=lnms&tbm=isch): [Reddit wiki](//www.reddit.com/r/8mm/wiki/index).*
+  * *__VHS__: *
+    * *[How to Rip VHS](http://anarchivism.org/w/How_to_Rip_VHS).*
+    * *[Video Hardware Suggestions; Best VCRs to Convert Tape to Digital](http://www.digitalfaq.com/guides/video/capture-playback-hardware.htm).*
+  * *__LaserDisc__: *
+    * *Traditional method: [How to Rip Laserdisc](http://anarchivism.org/w/How_to_Rip_Laserdisc) and [reddit topic](//www.reddit.com/r/LaserDisc/comments/3eqqhq/ripping_laserdiscs).*
+    * *New method: [Doomsday Duplicator](//www.domesday86.com/?page_id=978), see [example results](//yukisubs.files.wordpress.com/2020/04/domdup_comparison.jpg). Project [background presentation](http://abug.org.uk/index.php/2020/07/04/domesday-86-part-1-the-project/?series=vabug-4th-july-2020).*
+      * *Technical Background: [Hardware](//www.domesday86.com/?page_id=2233), [Software](//www.domesday86.com/?page_id=1070), [Laserdisc Decoding](https://www.domesday86.com/?page_id=1379).*
+      * *[Install and Usage guide](//www.domesday86.com/?page_id=1312).*
+      * *Once captured as raw, the contents must be decoded in software. Hence [ld-decode](//github.com/happycube/ld-decode/wiki) which is a "software defined LaserDisc player."*
+        * *[Installation](//github.com/happycube/ld-decode/wiki/Installation), [Basic Usage Guide](https://github.com/happycube/ld-decode/wiki/Basic-usage-of-ld-decode), and [NTSC decoding](//github.com/happycube/ld-decode/wiki/Creating-video-from-NTSC-decodes) in vapoursynth.*
+  * *Outdated but interesting:*
+    * *[Video Workflows: Capture MPEG-2 for DVD](http://www.digitalfaq.com/guides/video/dvd-workflows-mpeg2.htm).*
+    * *[Good Methods to Create DVDs (Video Workflows)](http://www.digitalfaq.com/guides/video/dvd-workflows.htm).*
