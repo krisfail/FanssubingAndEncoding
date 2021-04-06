@@ -94,155 +94,155 @@
 * __輝度と色彩の理論__:
   * 人間の[色覚](//www.cambridgeincolour.com/tutorials/color-perception.htm) と [特性](//www.cambridgeincolour.com/tutorials/cameras-vs-human-eye.htm).
     * 私達の目はガバガバ: [human blind spot test](https://yukisubs.files.wordpress.com/2020/04/blind-spot-test.jpg).
-  * Adobe Video Road blog: [Understanding Color](//blogs.adobe.com/VideoRoad/2010/06/understanding_color_processing.html), [What is YUV](//blogs.adobe.com/VideoRoad/2010/06/what_is_yuv.html), [Color Subsampling](//blogs.adobe.com/VideoRoad/2010/06/color_subsampling_or_what_is_4.html).
-    * [8-bit vs 16-bit](//www.diyphotography.net/8-bit-vs-16-bit-color-depth-use-matters).
-    * [Bit Depth Tutorial](//www.cambridgeincolour.com/tutorials/bit-depth.htm).
-    * [Doki - Discussion: 10-bit h264](//doki.co/2011/07/19/discussion-10-bit-h264) or here are the linked PDFs: [10-bit AVC Broadcasting](//yukisubs.files.wordpress.com/2016/10/using_10-bit_avc-h-264_encoding_with_422_for_broadcast_contribution_-_pierre_larbier.pdf), [Why 10-bit Saves Bandwidth](//yukisubs.files.wordpress.com/2016/10/why_does_10bit_save_bandwidth_-_ateme.pdf), [10-bit Presentation](//yukisubs.files.wordpress.com/2016/10/10-bit_pristine_video_quality_presentation_-_ateme.pdf).
-    * Interesting related [blog post](http://archimago.blogspot.com/2016/12/quick-compare-avc-vs-hevc-8-bit-vs-10.html).
-    * [Understanding Histograms](//www.cambridgeincolour.com/tutorials/histograms1.htm), [Part 2](//www.cambridgeincolour.com/tutorials/histograms2.htm) and an [example](//yukisubs.files.wordpress.com/2018/06/beluga.jpg).
-    * Understanding [White Balance](//www.cambridgeincolour.com/tutorials/white-balance.htm).
-    * [Dynamic Range](//www.cambridgeincolour.com/tutorials/dynamic-range.htm).
-    * Interesting case studies:
-    * Wiki: [Color space](//en.wikipedia.org/wiki/Color_space), [Rec601](//en.wikipedia.org/wiki/Rec._601) and [Rec709](//en.wikipedia.org/wiki/Rec._709).
-    * [NTSC vs PAL color primaries](//video.stackexchange.com/questions/16840/ffmpeg-explicitly-tag-h-264-as-bt-601-rather-than-leaving-unspecified).
-    * Example of [YCbCr color componet data ranges](http://discoverybiz.net/enu0/faq/faq_YUVDataRangeByBreeze.html).
-    * Information on different [YUV sub-sampling patterns](http://discoverybiz.net/enu0/faq/faq_YUVSubSampleByBreeze.html).
-    * PSNR comparison of different YUV sub-sampling patterns when performing color family conversions: [Quality of RGB-YUV-RGB conversion](http://discoverybiz.net/enu0/faq/faq_YUVbyBreeze_test_00.html). 
-* __Framerate Theory__:
-  * [How many frames can humans see?](https://www.100fps.com/how_many_frames_can_humans_see.htm), [PDF](//yukisubs.files.wordpress.com/2016/11/how_many_fps_can_the_human_eye_see.pdf).
-    * The frames per second (FPS) theory guide also covers "smoothness" by blurring and luma sensitivity.
-      * [Understanding FFMPEG's Group of Pictures (GOP) Options](//esoterictek.blogspot.com/2017/04/understanding-ffmpegs-group-of-pictures.html).
-  * Variable Frame Rate: [VFR for Fansub Encoders](//forums.animesuki.com/showthread.php?t=34738), [PDF](//yukisubs.files.wordpress.com/2016/10/vfr_for_fansub_encoders.pdf)
-  * AviSynth's [Working with VFR](http://avisynth.nl/index.php/VFR) guide and [VFRaC Workarounds](//mod16.org/hurfdurf/?p=7).
-  * FPS theory sandbox: [frames-per-second.appspot.com](//frames-per-second.appspot.com).
-* __Interlacing Theory__:
-  * Some random [CRT, NTSC, and Interlacing History](http://foro.doom9.org/video-basics.htm).
-  * Everything you never wanted to know about [interlacing](https://www.100fps.com), [PDF](//yukisubs.files.wordpress.com/2016/11/what_is_deinterlacing_the_best_method_to_deinterlace_movies.pdf).
-    * [The Nature of Interlaced TV, Film-to-Video Conversion, and Other Interesting Gambits](//hometheaterhifi.com/volume_7_4/dvd-benchmark-part-5-progressive-10-2000.html).
-* __Codec Bit Allocation Theory__:
-  * [Understanding Rate Control Modes (x264, x265)](http://slhck.info/video/2017/03/01/rate-control.html), [PDF](//yukisubs.files.wordpress.com/2017/04/understanding_rate_control_modes_x264_x265.pdf).
-  * [CRF Guide (Constant Rate Factor in x264 and x265)](http://slhck.info/video/2017/02/24/crf-guide.html), [PDF](//yukisubs.files.wordpress.com/2017/04/crf_guide_constant_rate_factor_in_x264_and_x265.pdf).
-  * For understanding x264 resolution and bitrate relationships see [this guide](http://www.lighterra.com/papers/videoencodingh264). This also covers x264 settings.
-* __Resolution Theory and Standards__:
-  * [Native Resolutions and Scaling](//kageru.moe/blog/article/resolutions) and [automation script](https://github.com/Infiziert90/getnative).
-  * Questionable links on resolution standards: [random article](https://www.bestusbpoweredmonitor.com/2017/08/16/720p-vs-1080p-vs-1440p-vs-4k-vs-8k/) and [another one](https://www.lifewire.com/720p-vs-1080p-a-comparison-1847332).
-  * Blog with native resolutions for [various shows](//anibin.blogspot.com/2017/07/blog-post.html).
-  * [Scaling Theory and Algorithms](//www.cambridgeincolour.com/tutorials/image-interpolation.htm), [Part 2](//www.cambridgeincolour.com/tutorials/image-resize-for-web.htm).
-  * 2018Jan status update on techniques for [upscaling consumer media to 4k](https://freetime.mikeconnelly.com/archives/1206).
-* __Audio Theory__:
-  * [Audio Frequency and Loudness: Part I - An Introduction to the Basics](https://hometheaterhifi.com/technical/technical-reviews/audio-frequency-loudness-part-introduction-basics/).
-  * [Real Sounds and Frequency Composition: Part II](https://hometheaterhifi.com/technical/technical-reviews/real-sounds-frequency-composition-part-ii).
-* __Encoding and Release Standards__: These exist to ensure client hardware decoding compatibility. Please note that compatibility is not emphasized in the Anime community.
+  * ~~Adobe Video Road blog: [色を理解する](//blogs.adobe.com/VideoRoad/2010/06/understanding_color_processing.html), [YUVとはなにか](//blogs.adobe.com/VideoRoad/2010/06/what_is_yuv.html), [Color Subsampling](//blogs.adobe.com/VideoRoad/2010/06/color_subsampling_or_what_is_4.html).~~ リンク切れ
+  * [8-bit と 16-bit](//www.diyphotography.net/8-bit-vs-16-bit-color-depth-use-matters).
+  * [色深度チュートリアル](//www.cambridgeincolour.com/tutorials/bit-depth.htm).
+  * [Doki - Discussion: 10-bit h264](//doki.co/2011/07/19/discussion-10-bit-h264) PDF版: [10-bit AVC Broadcasting](//yukisubs.files.wordpress.com/2016/10/using_10-bit_avc-h-264_encoding_with_422_for_broadcast_contribution_-_pierre_larbier.pdf), [Why 10-bit Saves Bandwidth](//yukisubs.files.wordpress.com/2016/10/why_does_10bit_save_bandwidth_-_ateme.pdf), [10-bit Presentation](//yukisubs.files.wordpress.com/2016/10/10-bit_pristine_video_quality_presentation_-_ateme.pdf).
+    * 関連する [ブログ記事](http://archimago.blogspot.com/2016/12/quick-compare-avc-vs-hevc-8-bit-vs-10.html).
+  * [ヒストグラムについて](//www.cambridgeincolour.com/tutorials/histograms1.htm), [Part 2](//www.cambridgeincolour.com/tutorials/histograms2.htm) と [実例](//yukisubs.files.wordpress.com/2018/06/beluga.jpg).
+  * [ホワイトバランスとは](//www.cambridgeincolour.com/tutorials/white-balance.htm).
+  * [ダイナミックレンジとは](//www.cambridgeincolour.com/tutorials/dynamic-range.htm).
+  * 興味深い実例:
+    * Wiki: [色空間](https://ja.wikipedia.org/wiki/%E8%89%B2%E7%A9%BA%E9%96%93), [Rec601](//en.wikipedia.org/wiki/Rec._601) と [Rec709](//en.wikipedia.org/wiki/Rec._709).
+    * [NTSCとPALの原色について](//video.stackexchange.com/questions/16840/ffmpeg-explicitly-tag-h-264-as-bt-601-rather-than-leaving-unspecified).
+    * [YCbCrのデータ範囲の例](http://discoverybiz.net/enu0/faq/faq_YUVDataRangeByBreeze.html).
+    * [YUV サブサンプリング](http://discoverybiz.net/enu0/faq/faq_YUVSubSampleByBreeze.html)に関する情報
+    * 色空間変換時のPSNR比較: [Quality of RGB-YUV-RGB conversion](http://discoverybiz.net/enu0/faq/faq_YUVbyBreeze_test_00.html). 
+* __フレームレート理論__:
+  * [人間が認識可能なフレームレート](https://www.100fps.com/how_many_frames_can_humans_see.htm), [PDF](//yukisubs.files.wordpress.com/2016/11/how_many_fps_can_the_human_eye_see.pdf).
+    * この理論ガイドではぼかしや輝度による主観的な滑らかさにも言及している。
+  * [FFmpegのGroup of Picturesオプションを理解する](//esoterictek.blogspot.com/2017/04/understanding-ffmpegs-group-of-pictures.html). 
+  * 可変フレームレート: [ファンサブにおけるVFR](//forums.animesuki.com/showthread.php?t=34738), [PDF](//yukisubs.files.wordpress.com/2016/10/vfr_for_fansub_encoders.pdf)
+  * AviSynth's [VFRガイド](http://avisynth.nl/index.php/VFR) [VFRaC Workarounds](//mod16.org/hurfdurf/?p=7).
+  * FPS理論について実際に動かしながら学習: [frames-per-second.appspot.com](//frames-per-second.appspot.com).
+* __インターレース理論__:
+  * いくつかの [CRT, NTSC,インターレースの歴史](http://foro.doom9.org/video-basics.htm).
+  * すべてを知るためのガイド(非推奨) [interlacing](https://www.100fps.com), [PDF](//yukisubs.files.wordpress.com/2016/11/what_is_deinterlacing_the_best_method_to_deinterlace_movies.pdf).
+  * [インターレースTV,フィルムとビデオの変換,その他の事実について](//hometheaterhifi.com/volume_7_4/dvd-benchmark-part-5-progressive-10-2000.html). 
+* __コーデックにおけるビット割当理論__:
+  * [ビットレート制御を理解する(x264, x265)](http://slhck.info/video/2017/03/01/rate-control.html), [PDF](//yukisubs.files.wordpress.com/2017/04/understanding_rate_control_modes_x264_x265.pdf).
+  * [CRF ガイド(レート定数(訳注:品質を指定するための係数) x264 and x265)](http://slhck.info/video/2017/02/24/crf-guide.html), [PDF](//yukisubs.files.wordpress.com/2017/04/crf_guide_constant_rate_factor_in_x264_and_x265.pdf).
+  * [x264の設定とビットレートに関するガイド](http://www.lighterra.com/papers/videoencodingh264).
+* __解像度理論と基準__:
+  * [ネイティブ解像度とスケーリング](//kageru.moe/blog/article/resolutions)と [自動化スクリプト](https://github.com/Infiziert90/getnative).
+  * 一般的な解像度に関する怪しい(訳語疑問)リンク:*[random article](https://www.bestusbpoweredmonitor.com/2017/08/16/720p-vs-1080p-vs-1440p-vs-4k-vs-8k/) and [another one](https://www.lifewire.com/720p-vs-1080p-a-comparison-1847332).*
+  * [様々な番組のネイティブ解像度](//anibin.blogspot.com/2017/07/blog-post.html).
+  * [スケーリング理論とアルゴリズム](//www.cambridgeincolour.com/tutorials/image-interpolation.htm), [Part 2](//www.cambridgeincolour.com/tutorials/image-resize-for-web.htm).
+  * 2018年1月における [市販メディアの4kアップスケーリング](https://freetime.mikeconnelly.com/archives/1206).
+* __オーディオ理論__:
+  * [可聴周波数と聞こえ方:Part1-基礎](https://hometheaterhifi.com/technical/technical-reviews/audio-frequency-loudness-part-introduction-basics/).
+  * [実際の音と周波数構成:Part2](https://hometheaterhifi.com/technical/technical-reviews/real-sounds-frequency-composition-part-ii).
+* __エンコードとリリース基準__: これらは一般社会におけるデコーディングの互換性を確保するために存在する。アニメコミュニティでは互換性が重視されないことが多い。
   * Apple's [General Authoring Requirements](//developer.apple.com/library/content/documentation/General/Reference/HLSAuthoringSpec/Requirements.html#//apple_ref/doc/uid/TP40016596-CH2-SW1).
   * Youtube's [Recommended upload encoding settings](//support.google.com/youtube/answer/1722171?hl=en).
   * "Scene" [release standards](//scenerules.org) for [Anime](//scenerules.org/n.html?id=2014_X264-ANIME.nfo),  [x264](//scenerules.org/n.html?id=2011_X264.2.nfo), [DVDrips](//scenerules.org/n.html?id=2011_DVDR.nfo), [BDrips](//scenerules.org/n.html?id=2010_BDr.nfo).
   * Microsoft's [Video Media Types](//docs.microsoft.com/en-us/windows/desktop/medfound/video-media-types) and [supported formats](//docs.microsoft.com/en-us/windows/desktop/medfound/supported-media-formats-in-media-foundation).
-* __Concrete Guides (completely random)__:
-* Koby/Finayra's concrete [Beginner's Guide](//tofincayra.wordpress.com/encoding/beginners-guide), or "Quickstart Guide", to modern A/V encoding. This guide is a translation of TODO: [eXmendic's guide] also covers 16-bit filtering (advanced).
-* Installing [HuffYUV on Windows 64-bit](http://www.digitalfaq.com/forum/video-conversion/2193-cannot-install-huffyuv.html#post11627).
-* [Doom9 Forum](http://forum.doom9.org/index.php) and [guides index](http://foro.doom9.org/guides.htm).
-* Frame accurate indexing of DVD Video Object (.VOB) files: [DGIndex](http://avisynth.nl/index.php/DGDecode) for use with [AviSynth](http://avisynth.nl/index.php/Main_Page). Also: see this [related guide](//www.animemusicvideos.org/guides/avtech/videogetb2.html).
-* [Encoding Tips for Mini-Size](https://sites.google.com/site/taumox/encoding-tips-for-mini-size).
-* [Random Index of Converting Guides](http://www.videohelp.com/guides/category/convert-articles-4;43) and Afterdawn's [Guides Index](http://www.afterdawn.com/guides/guides_by_category.cfm).
-* [Monitor Calibration for Photography](//www.cambridgeincolour.com/tutorials/monitor-calibration.htm).
-* pixelblended's [AMV 101](https://pixelblended.com/amv101/en/).
-* l33tmeatwad's [Software List](//www.animemusicvideos.org/forum/viewtopic.php?t=124965) and [AMVtool](https://github.com/l33tmeatwad/AMVtool).
-* DarkDream787's Encoding Tutorials (PDFs):
-  * [Required Software List](//yukisubs.files.wordpress.com/2017/06/darkdream787-tutorials-required-software-list.pdf).
-  * How to backup [DVDs to HDD](//yukisubs.files.wordpress.com/2017/06/how-to-backup-dvds-to-hdd.pdf) and [Blu-Rays to HDD](//yukisubs.files.wordpress.com/2017/06/how-to-backup-blu-rays-to-hdd.pdf).
-  * How to create .SRT or .ASS subtitles [From DVDs](//yukisubs.files.wordpress.com/2017/06/how-to-create-srt-or-ass-subtitles-from-dvd.pdf) and [From Blu-Rays](//yukisubs.files.wordpress.com/2017/06/how-to-create-srt-or-ass-subtitles-from-blu-rays.pdf).
-  * [How to Encode High Quality Audio From DVDs/BDs](//yukisubs.files.wordpress.com/2017/06/how-to-encode-high-quality-audio-from-dvds-and-blu-rays.pdf).
-  * [How to use AVISynth](//yukisubs.files.wordpress.com/2017/06/how-to-use-avisynth.pdf).
-  * [How to Encode AVISynth scripts in MeGui](//yukisubs.files.wordpress.com/2017/06/how-to-encode-avisynth-scripts-in-megui.pdf).
-  * [Cutting-Splitting-Merging Video and Audio](//yukisubs.files.wordpress.com/2017/06/cutting-splitting-merging-video-and-audio.pdf).
-  * [How to make an MKV File From Video, Audio, and Subtitle Files](//yukisubs.files.wordpress.com/2017/06/how-to-make-an-mkv-file-from-video-audio-and-subtitle-files.pdf).
-* Random Software List: [Ask an Experienced Encoder](//dustorrent.com/community/show/ask-experienced-encoder-here), [PDF](//yukisubs.files.wordpress.com/2016/10/ask_an_experienced_encoder.pdf).
-* __Specific Software__ (near top means easier to use, near bottom means full featured)
-  * [Handbrake](//handbrake.fr), and a [Related Guide](//lifehacker.com/5559007/the-hassle-free-guide-to-ripping-your-blu-ray-collection).
-  * vEncode [Project Page](//github.com/gdiaz384/vEncode) and [releases](//github.com/gdiaz384/vEncode/releases). Note: Uses a Command Line Interface (CLI).
+* __具体的なガイド (雑多)__:
+* Koby/Finayraの具体的な [初心者ガイド](//tofincayra.wordpress.com/encoding/beginners-guide), クイックスタートから最新技術まで。このガイドはToDoの翻訳。eXnebducのガイドは16bitフィルタリングまでカバー
+* [HuffYUVをWindowsにインストールする方法](http://www.digitalfaq.com/forum/video-conversion/2193-cannot-install-huffyuv.html#post11627).
+* [Doom9フォーラム](http://forum.doom9.org/index.php) と [ガイドインデックス](http://foro.doom9.org/guides.htm).
+* DVDビデオ(VOB)ファイルの正確なフレームインデックス作成: [DGIndex](http://avisynth.nl/index.php/DGDecode) を [AviSynth](http://avisynth.nl/index.php/Main_Page)で利用。:[関連ガイド](//www.animemusicvideos.org/guides/avtech/videogetb2.html).
+* [エンコードに関するヒント](https://sites.google.com/site/taumox/encoding-tips-for-mini-size).
+* [雑多な変換に関する目次](http://www.videohelp.com/guides/category/convert-articles-4;43) と Afterdawnの[ガイドインデックス](http://www.afterdawn.com/guides/guides_by_category.cfm).
+* [モニターキャリブレーション](//www.cambridgeincolour.com/tutorials/monitor-calibration.htm).
+* pixelblendedの[AMV 101](https://pixelblended.com/amv101/en/).
+* l33tmeatwadの[ソフトウェアリスト](//www.animemusicvideos.org/forum/viewtopic.php?t=124965)と [AMVtool](https://github.com/l33tmeatwad/AMVtool).
+* DarkDream787のエンコードチュートリアル (PDF):
+  * [要求ソフトウェア](//yukisubs.files.wordpress.com/2017/06/darkdream787-tutorials-required-software-list.pdf).
+  * バックアップ法 [DVDからHDD](//yukisubs.files.wordpress.com/2017/06/how-to-backup-dvds-to-hdd.pdf)と [Blu-RayからHDD](//yukisubs.files.wordpress.com/2017/06/how-to-backup-blu-rays-to-hdd.pdf).
+  * SRT,ASSといった字幕を [DVDs](//yukisubs.files.wordpress.com/2017/06/how-to-create-srt-or-ass-subtitles-from-dvd.pdf) や [Blu-Rays](//yukisubs.files.wordpress.com/2017/06/how-to-create-srt-or-ass-subtitles-from-blu-rays.pdf)から取り出す方法
+  * [DVDやBDから高品質な音声をエンコードする方法](//yukisubs.files.wordpress.com/2017/06/how-to-encode-high-quality-audio-from-dvds-and-blu-rays.pdf).
+  * [AVISynthの使い方](//yukisubs.files.wordpress.com/2017/06/how-to-use-avisynth.pdf).
+  * [AVISynthのスクリプトをMeGuiでエンコードする方法](//yukisubs.files.wordpress.com/2017/06/how-to-encode-avisynth-scripts-in-megui.pdf).
+  * [ビデオとオーディオのカット、分割、結合](//yukisubs.files.wordpress.com/2017/06/cutting-splitting-merging-video-and-audio.pdf).
+  * [動画・音声・字幕ファイルからMKVファイルを作成する方法](//yukisubs.files.wordpress.com/2017/06/how-to-make-an-mkv-file-from-video-audio-and-subtitle-files.pdf).
+* 雑多なソフトウェア: [エンコード経験者に聞く](//dustorrent.com/community/show/ask-experienced-encoder-here), [PDF](//yukisubs.files.wordpress.com/2016/10/ask_an_experienced_encoder.pdf).
+* 具体的なソフトウェア一覧 (上に近いほど使いやすく、下に近いほど機能が充実)
+  * [Handbrake](//handbrake.fr), と[ガイド](//lifehacker.com/5559007/the-hassle-free-guide-to-ripping-your-blu-ray-collection).
+  * vEncode [プロジェクトページ](//github.com/gdiaz384/vEncode) and [リリースページ](//github.com/gdiaz384/vEncode/releases). ちなCLI
   * [MeGUI](http://www.videohelp.com/software/MeGUI), [Project Thread](http://forum.doom9.org/showthread.php?t=96032), and [Guide](http://www.sevenforums.com/tutorials/104382-video-encoding-x264-megui.html), [PDF](//yukisubs.files.wordpress.com/2016/10/video_encoding_x264_with_megui.pdf).
   * StaxRip: [VideoHelp page](//www.videohelp.com/software/StaxRip), [GitHub Project Page](//github.com/stax76/staxrip), and [Handbook](//www.gitbook.com/book/stax76/staxrip-handbook/details).
-  * [Hybrid](http://www.videohelp.com/software/Hybrid) supports a Graphical User Interface (GUI).
+  * [Hybrid](http://www.videohelp.com/software/Hybrid) GUIサポートあり
     * __FFMPEG__: 
-      * Getting Started: [FFmpeg: The ultimate Video and Audio Manipulation Tool](//blog.superuser.com/2012/02/24/ffmpeg-the-ultimate-video-and-audio-manipulation-tool/), [PDF](//yukisubs.files.wordpress.com/2017/04/ffmpeg_the_ultimate_video_and_audio_manipulation_tool.pdf).
-      * Getting Started 2: [A Guide To Video And Audio Conversion Using FFmpeg](http://www.hongkiat.com/blog/ffmpeg-guide).
-      * [Useful FFmpeg Commands](http://www.labnol.org/internet/useful-ffmpeg-commands/28490).
-      * [FFmpeg and H.264 Encoding Guide](//trac.ffmpeg.org/wiki/Encode/H.264).
-      * [How to burn subtitles into the video](//trac.ffmpeg.org/wiki/HowToBurnSubtitlesIntoVideo).
-      * Official [source and binaries](//ffmpeg.org/download.html), [Cross Compiling for Windows](//trac.ffmpeg.org/wiki/CompilationGuide/CrossCompilingForWindows), [build helpers](//github.com/rdp/ffmpeg-windows-build-helpers), and Todo: nvenc compile guide and [3.2 binaries].
-      * [FFmpeg wiki](//trac.ffmpeg.org/wiki), Official [Cryptic Documentation](//ffmpeg.org/ffmpeg.html), cryptic [Arch Docs](//wiki.archlinux.org/index.php/FFmpeg).
-      * Advanced guide to [Creating Multiple Outputs](//trac.ffmpeg.org/wiki/Creating%20multiple%20outputs) (simultaneous 480p, 720p, and 1080p encoding).
+      * Getting Started: [FFmpeg: 究極のビデオ・オーディオ操作ツール](//blog.superuser.com/2012/02/24/ffmpeg-the-ultimate-video-and-audio-manipulation-tool/), [PDF](//yukisubs.files.wordpress.com/2017/04/ffmpeg_the_ultimate_video_and_audio_manipulation_tool.pdf).
+      * Getting Started 2: [ FFmpegを使ったビデオとオーディオの変換の手引き](http://www.hongkiat.com/blog/ffmpeg-guide).
+      * [便利なFFmpegコマンド](http://www.labnol.org/internet/useful-ffmpeg-commands/28490).
+      * [FFmpegとH.264のエンコードガイド](//trac.ffmpeg.org/wiki/Encode/H.264).
+      * [ビデオに字幕を書き込む方法](//trac.ffmpeg.org/wiki/HowToBurnSubtitlesIntoVideo).
+      * 公式[ダウンロード](//ffmpeg.org/download.html), [Windowsへのクロスコンパイル](//trac.ffmpeg.org/wiki/CompilationGuide/CrossCompilingForWindows), [ビルドヘルパースクリプト](//github.com/rdp/ffmpeg-windows-build-helpers), and Todo: nvenc compile guide and [3.2 binaries].
+      * [FFmpeg wiki](//trac.ffmpeg.org/wiki), 公式 [難解なDocumentation](//ffmpeg.org/ffmpeg.html), cryptic [Arch Docs](//wiki.archlinux.org/index.php/FFmpeg).
+      * 発展的な [複数出力ガイド](//trac.ffmpeg.org/wiki/Creating%20multiple%20outputs) (同時に480p, 720p, and 1080p みたいなエンコード).
   * [x264 Project Page](//www.videolan.org/developers/x264.html), [Documentation](http://www.chaneru.com/Roku/HLS/X264_Settings.htm), and [binaries](//download.videolan.org/x264/binaries).
   * [x265 Information](http://x265.org), [Documentation](//x265.readthedocs.io/en/default/introduction.html) and [binaries](http://msystem.waw.pl/x265).
-* __Audio Encoding__:
-  * [FFMPEG High Quality Audio Guide](//trac.ffmpeg.org/wiki/Encode/HighQualityAudio).
-  * [eac3to](http://www.videohelp.com/software/eac3to): Command Line Interface (CLI) audio encoding tool with many Graphical User Interfaces (GUIs) available.
-  * DarkDream787's [How to Encode High Quality Audio From DVDs/BDs](//yukisubs.files.wordpress.com/2017/06/how-to-encode-high-quality-audio-from-dvds-and-blu-rays.pdf).
-  * Opus codec [Comparison](//opus-codec.org/comparison) and [FAQ](//wiki.xiph.org/OpusFAQ).
-* __Playback (Computer)__:
-  * For DVDs, diagnostics and saving network streams (NOT normal viewing): [VLC Media Player](//www.videolan.org/index.html).
-  * For Windows pick ONE (will install MPC and [LAV](//www.videohelp.com/software/LAV-Filters-Megamix) automatically):
-    * [Combined Community Codec Pack (CCCP)](http://www.cccp-project.net). (lightweight, but playback only)
-    * [K-Lite Codec Pack](//www.codecguide.com/download_k-lite_codec_pack_mega.htm). (Mega pack contains VFW codecs for encoders.)
+* __音声エンコーディング__:
+  * [FFMPEG 高品質オーディオガイド](//trac.ffmpeg.org/wiki/Encode/HighQualityAudio).
+  * [eac3to](http://www.videohelp.com/software/eac3to): コマンドラインインタフェース(CLI)のオーディオエンコーディングツールで、多くのグラフィカルユーザインタフェース(GUI)が利用できます
+  * DarkDream787's [DVD/BDから高音質オーディオをエンコードする方法](//yukisubs.files.wordpress.com/2017/06/how-to-encode-high-quality-audio-from-dvds-and-blu-rays.pdf).
+  * Opus codec [の比較](//opus-codec.org/comparison)と [FAQ](//wiki.xiph.org/OpusFAQ).
+* __再生 (パソコン)__:
+  * DVDの再生、映像の分析やストリーミングの保存に使用。通常の視聴にはしようしない: [VLC Media Player](//www.videolan.org/index.html).
+  * Windowsなら以下の一つをインストール (MPCとLAVが自動的にインストールされる):
+    * [Combined Community Codec Pack (CCCP)](http://www.cccp-project.net). (軽量だが再生専用)
+    * [K-Lite Codec Pack](//www.codecguide.com/download_k-lite_codec_pack_mega.htm). (エンコーダ用のVFWコーデックを含むメガパック)
     * [Kawaii Codec Pack (KCP)](http://haruhichan.com/forum/showthread.php?7545-KCP-Kawaii-Codec-Pack).
-  * [MediaInfo](//sourceforge.net/projects/mediainfo) is installed automatically with K-Lite CP. Otherwise, install it manually if necessary.
-  * [mpv](//mpv.io), [prescalers](//github.com/bjin/mpv-prescalers), is a modern fork of MPlayer. mpv [FAQ](//github.com/mpv-player/mpv/wiki/FAQ), [Wiki](//github.com/mpv-player/mpv/wiki), Moodkiller's [guide](//kametsu.com/topic/63120-mpv-made-easy-moodkiller-edition) and Kokomins's [guide](//kokomins.wordpress.com/2019/10/14/mpv-config-guide/).
-    * [MPlayer](//www.mplayerhq.hu) is a cross platform media player. ArchLinux's [documentation](//wiki.archlinux.org/index.php/MPlayer), and official [technical documentation](//www.mplayerhq.hu/DOCS/HTML/en/index.html).
-    * [SMPlayer](https://www.smplayer.info/) is cross platform media player that can be configured as a wrapper for mpv. Has a similar UI to MPC-HC.
-  * Advanced tips on [LAV splitter stream selection](https://1f0.de/lav-splitter/lav-splitter-stream-selection/).
-  * [madVR](http://madvr.com), [FAQ](http://forum.doom9.org/showthread.php?t=146228), is a gpu-accelerated "renderer" that can display video with increased fidelity compared to default settings. It also supports realtime filters for sharpening, color correction and other things. The implementation is as a Windows plug-in for various players including MPC-HC and mpv. After being automatically installed with K-Lite Codec Pack or installed manually, it must be selected for use within the player, hence the following guides:
+  * [MediaInfo](//sourceforge.net/projects/mediainfo)はK-Lite CPとともに自動的にインストールされます。それ以外の場合は、必要に応じて手動でインストールすること。
+  * [mpv](//mpv.io), [prescalers](//github.com/bjin/mpv-prescalers)は MPlayer のモダンフォーク。 mpv [FAQ](//github.com/mpv-player/mpv/wiki/FAQ), [Wiki](//github.com/mpv-player/mpv/wiki), Moodkillerによる [ガイド](//kametsu.com/topic/63120-mpv-made-easy-moodkiller-edition) and Kokominsによる [ガイド](//kokomins.wordpress.com/2019/10/14/mpv-config-guide/).
+    * [MPlayer](//www.mplayerhq.hu)はクロスプラットフォームのメディアプレイヤー。 ArchLinuxの[ドキュメント](//wiki.archlinux.org/index.php/MPlayer)と 公式 [technical documentation](//www.mplayerhq.hu/DOCS/HTML/en/index.html).
+    * [SMPlayer](https://www.smplayer.info/) はmpv のラッパーとして設定可能なクロスプラットフォームのメディアプレイヤー。 MPC-HC と似たような UI を持っている。
+  * 高度なヒント [LAV splitter stream selection](https://1f0.de/lav-splitter/lav-splitter-stream-selection/).
+  * [madVR](http://madvr.com), [FAQ](http://forum.doom9.org/showthread.php?t=146228),(GPUレンダラー)は、デフォルトの設定に比べて、より忠実にビデオを表示することができます。また、シャープネスや色調補正などのリアルタイムフィルターにも対応しています。実装は、MPC-HCやmpvなど様々なプレーヤーのWindowsプラグインとして行われている。K-Lite Codec Packと一緒に自動インストールされるか、手動でインストールされた後、プレーヤー内で使用するために選択する必要があるため、以下のようなガイドがあります。
     * Kametsu guide for [MPC-HC + LAV/madVR/xy-subfilter](//kametsu.com/topic/58428-guide-installing-mpc-hc-with-madvr-lavfilters-xysubfilter-and-icaros).
     * Or for mpv: [Scum's Raws guide](//iamscum.wordpress.com/videoplayback-guide).
     * Some more: [ranpha's PotPlayer guide](//imouto.my/tutorials/configuring-potplayer-for-gpu-accelerated-video-playback-with-dxva-or-cuda-and-also-high-performance-software-decoding/), [BakaBT Wiki](http://wiki.bakabt.me/index.php/Hi10P), [CoalGirls - 2011](//coalgirls.wakku.to/faq/playback/setup-guide-for-mpc-hc-madvr), [another one](//shittastes.wordpress.com/tutorials/properly-installing-and-setting-up-mpc-hc/) and finally [Nand's Guide](http://haruhichan.com/wpblog/205/hi10p-info-guide/), [mirror](http://archive.is/VnjWi), [PDF](//yukisubs.files.wordpress.com/2018/02/hi10pforanimefans_and_playbackguide_bynand_haruhichan.pdf).
     * Advanced: ranpha's very detailed [madVR settings configuration guide](//imouto.my/tutorials/madvr/), [PDF](//yukisubs.files.wordpress.com/2018/02/madvrconfiguration_-by_ranpha.pdf).
-* __Playback (HTPC)__:
-  * Remote: Use [this](//www.amazon.com/Windows-Control-Infrared-Receiver-Ultimate/dp/B00224ZDFY/ref=sr_1_1?ie=UTF8&qid=1334779407&sr=8-1), or
-  * A [wireless keyboard](//www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Delectronics&field-keywords=logitech+wireless+keyboard+with+touchpad), [mini version](//www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR12.TRC2.A0.H0.Xmini+wireless+keyboard.TRS0&_nkw=mini+wireless+keyboard&_sacat=0).
-  * For a dedicated HTPC box: [Kodi](//kodi.tv) (formally XBMC).
-    * Note: Natively, the Raspberry Pi 3 B cannot properly decode 10-bit content.
-    * Notable Variants: [LibreElec](//libreelec.tv), [OpenElec](http://openelec.tv/), [Plex](//www.plex.tv).
-  * For a Client-Server model (recommended): either [Plex](//www.plex.tv) (closed source) or [Emby](//emby.media), formally Media Browser, (open source).
-    * Plex/Emby realtime transcoding (free) means all client devices will always be able to decode streams properly (universal compatibility, including HTML5 web browsers).
-    * Notable Variants: [RasPlex](http://www.rasplex.com), [Kodi's Plex Add-on](//kodi.tv/plex-add-on-for-kodi), and the Plex Client for Xbox 360.
-    * Plex's [Full Client List](//forums.plex.tv/discussion/190573/list-of-current-client-product-and-client-platform).
-    * Emby's [Kodi addon](//emby.media/emby-for-kodi.html), [repository](//github.com/MediaBrowser/plugin.video.emby/wiki/Emby-Repository) (to install the dependencies), and [Full Client List](http://emby.media/download.html).
-    * Random: Check out [Rasplex](http://www.rasplex.com/), [Kodi via OpenElec](//openelec.tv/), [Raspian](//www.raspbian.org), and [RetroPi](//retropie.org.uk).
-  * Or just use an [High-Definition Multimedia Interface](http://www.hdmi.org/consumer/hdmi_advantage.aspx) (HDMI) cable (audio + video) to connect a laptop to a TV temporarily. [HDMI FAQ](http://www.hdmi.org/learningcenter/faq.aspx).
-* __QC__ (?): [Bitrate Viewer](http://www.winhoros.de/docs/bitrate-viewer) Able to estimate the quality of MPEG1 and MPEG2 streams. I do not know how this is useful but Etzimal said to add it. o_o*
+* *__Playback (HTPC)__:*
+  * *Remote: Use [this](//www.amazon.com/Windows-Control-Infrared-Receiver-Ultimate/dp/B00224ZDFY/ref=sr_1_1?ie=UTF8&qid=1334779407&sr=8-1), or*
+  * *A [wireless keyboard](//www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Delectronics&field-keywords=logitech+wireless+keyboard+with+touchpad), [mini version](//www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313.TR12.TRC2.A0.H0.Xmini+wireless+keyboard.TRS0&_nkw=mini+wireless+keyboard&_sacat=0).*
+  * *For a dedicated HTPC box: [Kodi](//kodi.tv) (formally XBMC).*
+    * *Note: Natively, the Raspberry Pi 3 B cannot properly decode 10-bit content.*
+    * *Notable Variants: [LibreElec](//libreelec.tv), [OpenElec](http://openelec.tv/), [Plex](//www.plex.tv).*
+  * *For a Client-Server model (recommended): either [Plex](//www.plex.tv) (closed source) or [Emby](//emby.media), formally Media Browser, (open source).*
+    * *Plex/Emby realtime transcoding (free) means all client devices will always be able to decode streams properly (universal compatibility, including HTML5 web browsers).*
+    * *Notable Variants: [RasPlex](http://www.rasplex.com), [Kodi's Plex Add-on](//kodi.tv/plex-add-on-for-kodi), and the Plex Client for Xbox 360.*
+    * *Plex's [Full Client List](//forums.plex.tv/discussion/190573/list-of-current-client-product-and-client-platform).*
+    * *Emby's [Kodi addon](//emby.media/emby-for-kodi.html), [repository](//github.com/MediaBrowser/plugin.video.emby/wiki/Emby-Repository) (to install the dependencies), and [Full Client List](http://emby.media/download.html).*
+    * *Random: Check out [Rasplex](http://www.rasplex.com/), [Kodi via OpenElec](//openelec.tv/), [Raspian](//www.raspbian.org), and [RetroPi](//retropie.org.uk).*
+  * *Or just use an [High-Definition Multimedia Interface](http://www.hdmi.org/consumer/hdmi_advantage.aspx) (HDMI) cable (audio + video) to connect a laptop to a TV temporarily. [HDMI FAQ](http://www.hdmi.org/learningcenter/faq.aspx).*
+* __QC__ (?): [Bitrate Viewer](http://www.winhoros.de/docs/bitrate-viewer) Able to estimate the quality of MPEG1 and MPEG2 streams.どこがどう便利なのかわかりませんが、Etzimalが追加しろと言っていました。
 
 #### __多重化と分割__
 
-* __Theory__: For muxing, the idea is to take multiple discrete files (video, audio, subtitles, fonts) and merge them together into a single file for playback. For demuxing, the idea is to take one file that contains multiple streams and extract out at least one of them.
-* Muxing typically means shortening, lengthening or delaying streams for syncing. Shortening and delaying are compatible with stream copying techniques. However, any lengthening or modifications done mid-stream will typically require transcoding the entire stream. Thus, the two tasks (encoding and muxing) overlap somewhat.
-* Demuxing is usually necessary to obtain sources to work from and can be thought of as part of Capping.
-* The typical containers used are either [Matroska](//www.matroska.org/technical/whatis/index.html) (.mkv) with softsubs, fonts and possibly multiple audio streams, or standard MPEG-4 (.mp4) containers with hardsubs and a single audio stream.
-* __Muxing tools__:
+* __理論__: 多重化(Muxing)は複数の個別ファイル(ビデオ、オーディオ、字幕、フォント)を再生用の1つのファイルに統合すること。 分割(Demuxing)は、複数のストリームを含む1つのファイルを取り出し、そのうちの少なくとも1つを抽出すること。
+* 多重化は一般的に、同期のためにストリームを短くしたり、長くしたり、遅らせたりすることがある。短縮や遅延は、ストリームのコピー技術と互換性があるが、カット編集などを行うと通常、ストリーム全体をトランスコードする必要があるので、2つの作業(エンコードと多重化)は多少重なる。
+* 分割は通常、作業用のソースを得るために必要であり、キャッピングの一部と考えることができる。
+* 一般的に使用されるコンテナは、ソフトサブ(訳注:動画に直接埋め込まれていない字幕),フォント,場合によっては複数のオーディオストリームを備えたMatroska().mkv),またはハードサブと単一のオーディオストリームを備えた標準的なMPEG-4(.mp4)コンテナです。
+* __多重化ツール__:
 * FFMPEG:
-  * Read up on the following switches: `-ss -t -to` in the [ffmpeg documentation](//ffmpeg.org/ffmpeg.html#Main-options) and also [this guide](//trac.ffmpeg.org/wiki/Seeking).
-  * Use the `-map` switch to extract a non-first stream in multistream files. [FFMPEG documentation](//ffmpeg.org/ffmpeg.html#Advanced-options) and a [related guide](//trac.ffmpeg.org/wiki/Map).
+  * スイッチ: `-ss -t -to` を参照せよ。詳細は[ffmpeg documentation](//ffmpeg.org/ffmpeg.html#Main-options) と [ガイド](//trac.ffmpeg.org/wiki/Seeking).
+  * マルチストリームファイルで最初ではないファイルを抽出するには `-map` スイッチを用いる。. [FFMPEG documentation](//ffmpeg.org/ffmpeg.html#Advanced-options) と [関連するガイド](//trac.ffmpeg.org/wiki/Map).
 * [MKVToolNix](//mkvtoolnix.download/index.html):
-  * [VideoHelp Overview](//www.videohelp.com/software/MKVtoolnix).
+  * [VideoHelp 概要](//www.videohelp.com/software/MKVtoolnix).
   * Download: [Windows/OS-X](//www.fosshub.com/MKVToolNix.html), [Linux](//mkvtoolnix.download/downloads.html).
   * Required Add-on: gMKVExtractGUI. [Project Page](http://forum.doom9.org/showthread.php?t=170249) and [DL Link](//sourceforge.net/projects/gmkvextractgui/files/latest/download).
   * MKVMerge's [CLI Documentation](//mkvtoolnix.download/doc/mkvmerge.html).
-  * Advanced: [Creating Multi-Part Files](http://forum.videohelp.com/threads/359121-How-to-extract-cut-parts-from-a-mkv-including-all-audio-and-subtitle-tracks), [Concatening Multi-Part Files](//forums.plex.tv/discussion/178888/howto-joining-multi-part-movies-files-with-mkvtoolnix-gui).
-  * Advanced: [Ordered Chapters](https://forums.animesuki.com/showthread.php?t=66444) (OC) summary. Please do not use Ordered Chapters.
-    * [Implementation Details](//mod16.org/hurfdurf/?p=8), [Part 2](//mod16.org/hurfdurf/?p=14).
-    * To attempt to fix OCs: [UnlinkMKV](//github.com/gnoling/UnlinkMKV).
-  * When working with VFR, use [external timestamp files](https://mkvtoolnix.download/doc/mkvmerge.html#mkvmerge.external_timestamp_files) for the video bitstream.
+  * 発展: [Creating Multi-Part Files](http://forum.videohelp.com/threads/359121-How-to-extract-cut-parts-from-a-mkv-including-all-audio-and-subtitle-tracks), [Concatening Multi-Part Files](//forums.plex.tv/discussion/178888/howto-joining-multi-part-movies-files-with-mkvtoolnix-gui).
+  * 発展: [Ordered Chapters](https://forums.animesuki.com/showthread.php?t=66444) (OC) summary. Ordered Chaptersは使用しないこと。
+    * *[Implementation Details](//mod16.org/hurfdurf/?p=8), [Part 2](//mod16.org/hurfdurf/?p=14).*
+    * *To attempt to fix OCs: [UnlinkMKV](//github.com/gnoling/UnlinkMKV).*
+  * VFRを扱うなら [外部のタイムスタンプファイル](https://mkvtoolnix.download/doc/mkvmerge.html#mkvmerge.external_timestamp_files)を使用すること。
 * DVDs: 
-  * [DVD-Decrypter](http://www.videohelp.com/software/DVD-Decrypter), [Mega](//mega.nz/#F!wUYwDSgA!8tx_37HUBcs9KqPhkk5FmQ), + [Stream Processing Guide](http://www.doom9.org/index.html?/dvddec.htm). Dependencies: DVD-Decryptor needs to work from an optical device like [Virtual CloneDrive](//www.elby.ch/en/products/vcd.html) or a physical DVD. If Video_TS folders are available (a.k.a. a DVD rip), then use software that can make ISO files like [CDBurnerXP](//cdburnerxp.se/en/download).
-  * DGIndex, part of [DGDecode](http://avisynth.nl/index.php/DGDecode), [dgmpgdec158.zip](//mega.nz/#F!wUYwDSgA!8tx_37HUBcs9KqPhkk5FmQ).
+  * [DVD-Decrypter](http://www.videohelp.com/software/DVD-Decrypter), [Mega Download](//mega.nz/#F!wUYwDSgA!8tx_37HUBcs9KqPhkk5FmQ), + [ストリームガイド](http://www.doom9.org/index.html?/dvddec.htm). 依存関係: DVD-Decryptor は [Virtual CloneDrive](//www.elby.ch/en/products/vcd.html)か物理DVDドライブのような光学デバイスが必要です。Video_TSフォルダが利用できる場合(DVDリッピング)ならCDBurnerXPのようなISOファイルを作成できるソフトウェアを使用。
+  * DGIndex, [DGDecode](http://avisynth.nl/index.php/DGDecode)の一部。 [dgmpgdec158.zip](//mega.nz/#F!wUYwDSgA!8tx_37HUBcs9KqPhkk5FmQ).
 * BDs:
   * After the contents have been dumped, most bdmvs do not require special demuxing tools to handle. ffmpeg and mkvtoolsnix are usually sufficient but muxing tools can be used to speed up processing.
-  * [tsMuxer](http://www.videohelp.com/software/tsMuxeR), [Mega](//mega.nz/#F!wUYwDSgA!8tx_37HUBcs9KqPhkk5FmQ). Alternative to FFMPEG for muxing out transport streams (.ts or .m2ts) and supports parsing Blu-ray indexes (mpls). 
-  * [HD-DVD/Blu-Ray Stream Extractor](http://www.videohelp.com/software/HD-DVD-Blu-Ray-Stream-Extractor), [Mega](//mega.nz/#F!wUYwDSgA!8tx_37HUBcs9KqPhkk5FmQ). Alternative to tsMuxer. It is recommended to use both this and tsMuxer.
-  * Note: Both of the above require [eac3to](http://www.videohelp.com/software/eac3to).
+  * [tsMuxer](http://www.videohelp.com/software/tsMuxeR), [Mega](//mega.nz/#F!wUYwDSgA!8tx_37HUBcs9KqPhkk5FmQ). トランスポートストリーム (.ts または .m2ts) をミックスアウトする FFMPEG の代替品。Blu-ray インデックス (mpls) の解析をサポート。
+  * [HD-DVD/Blu-Ray Stream Extractor](http://www.videohelp.com/software/HD-DVD-Blu-Ray-Stream-Extractor), [Mega](//mega.nz/#F!wUYwDSgA!8tx_37HUBcs9KqPhkk5FmQ).tsMuxer の代替。これと tsMuxer の両方を使用することを推奨。
+  * 注:両方とも [eac3to](http://www.videohelp.com/software/eac3to)が必要。
 * [MKV-Cutter](https://www.videohelp.com/software/MKV-Cutter) (untested).
 * __Guides__: 
-  * OblivionShadow's and kantai.subs.moe's [Advanced SubStation Alpha Merging and Muxing Guide Guide - PDF](//kantai.subs.moe/wp-content/uploads/2016/08/Aegisub-Merging-and-Muxing-Guide.pdf), [PDF](//yukisubs.files.wordpress.com/2018/02/aegisub_merging_and_muxing_guide_by_oblivionshadow.pdf).
+  * OblivionShadowとkantai.subs.moeのガイド: [Advanced SubStation Alpha Merging and Muxing Guide Guide - PDF](//kantai.subs.moe/wp-content/uploads/2016/08/Aegisub-Merging-and-Muxing-Guide.pdf), [PDF](//yukisubs.files.wordpress.com/2018/02/aegisub_merging_and_muxing_guide_by_oblivionshadow.pdf).
   * Baal's [How To: Synchronize Two Audio Tracks For Muxing With Audacity](//kametsu.com/topic/45949-how-to-synchronize-two-audio-tracks-for-muxing-with-audacity).
-  * Catar's [Standards of Muxed Releases](//kametsu.com/topic/62012-the-ctr-muxing-standards-guide). Note: The emphasis is on media server compatible dual audio releases.
+  * Catar's [Standards of Muxed Releases](//kametsu.com/topic/62012-the-ctr-muxing-standards-guide). 注:メディアサーバーと互換性のあるデュアルオーディオのリリースに重点を置いている。
 
 #### __フィルター__
 
